@@ -376,7 +376,8 @@ button.btn-secondary:hover {
   color: #194376;
 }
 .card-img img {
-  width: 100%;
+  width: 50vw;
+  height:30vh;
 }
 .portfolio-main {
   padding: 30px 0px;

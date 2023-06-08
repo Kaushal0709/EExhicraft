@@ -10,7 +10,36 @@ body {
   font-size: 15px;
   color: #194376;
 }
+.chat-icon
+{
+  position: fixed;
+  right: 20px;
+  border: 0;
+  bottom: 10px;
+  font-size: 80px;
+  color:#fff;
+  cursor: pointer;
+  z-index: 1000;
+}
+.chat-box{
+  position: fixed;
+  right:20px;
+  bottom: 100px;
+  width: 400px;
+  height:75vh;
+  background: #dedede;
+  z-index: 1000;
+  transition: all 0.3s ease-out;
+  transform: scaleY(0);
+}
+.chat-box.active{
+  transform: scaleY(1);
+}
+.hidden
+{
+  display: none !important;
 
+}
 @media (min-width: 992px) {
   body {
     padding-top: 0px;
@@ -1609,6 +1638,7 @@ footer p {
   color: #fff;
   padding: 0px 15px;
 }
+
 
 .map-main {
 }

@@ -10,35 +10,32 @@ body {
   font-size: 15px;
   color: #194376;
 }
-.chat-icon
-{
+.chat-icon {
   position: fixed;
   right: 20px;
   border: 0;
   bottom: 10px;
   font-size: 80px;
-  color:#fff;
+  color: #fff;
   cursor: pointer;
   z-index: 1000;
 }
-.chat-box{
+.chat-box {
   position: fixed;
-  right:20px;
+  right: 20px;
   bottom: 100px;
   width: 400px;
-  height:75vh;
+  height: 75vh;
   background: #dedede;
   z-index: 1000;
   transition: all 0.3s ease-out;
   transform: scaleY(0);
 }
-.chat-box.active{
+.chat-box.active {
   transform: scaleY(1);
 }
-.hidden
-{
+.hidden {
   display: none !important;
-
 }
 @media (min-width: 992px) {
   body {
@@ -406,7 +403,7 @@ button.btn-secondary:hover {
 }
 .card-img img {
   width: 50vw;
-  height:30vh;
+  height: 30vh;
 }
 .portfolio-main {
   padding: 30px 0px;
@@ -1639,7 +1636,6 @@ footer p {
   padding: 0px 15px;
 }
 
-
 .map-main {
 }
 
@@ -1712,6 +1708,16 @@ footer p {
   .navbar-expand-lg.top-nav .navbar-nav .nav-link::after {
     display: none;
   }
+}
+
+.service-three-columns {
+  display: flex;
+}
+
+/* columns */
+.service-three-columns > * {
+  width: calc(100% / 3);
+  padding: 1rem;
 }
 
 @media (min-width: 320px) and (max-width: 575.98px) {

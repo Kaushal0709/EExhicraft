@@ -330,6 +330,11 @@ button.btn-secondary:hover {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+.clients-bar {
+  background: url(../images/dott.jpg);
+}
+
 .services-bar {
   padding: 20px 0px 30px 0px;
   background: url(../images/dott.jpg);

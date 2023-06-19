@@ -131,11 +131,11 @@ button.btn-secondary:hover {
 }
 
 .top-nav {
-  background-color: #ffffff !important;
+  background-color: #000000 !important; /* #ffffff !important; */
 }
 .navbar-expand-lg.top-nav .navbar-nav .nav-link {
   padding: 10px 15px;
-  color: #323232;
+  color: #ffffff; /* #323232; */
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
@@ -151,7 +151,7 @@ button.btn-secondary:hover {
   border-radius: 4.8px;
 }
 .navbar-expand-lg.top-nav .navbar-nav .nav-link.active {
-  color: #194376;
+  color: #ffffff; /* #194376; */
 }
 .navbar-expand-lg.top-nav .navbar-nav .nav-link.active:before {
   content: "";
@@ -934,6 +934,99 @@ footer p {
   background: #3b5998;
   border-color: #3b5998;
   color: #ffffff;
+}
+
+.hb-whatsapp,
+.hb-whatsapp:before,
+.hb-whatsapp:after {
+  background: #3aa659;
+  border-color: #3aa659;
+  color: #ffffff;
+}
+.hb-whatsapp:hover,
+.hb-whatsapp:hover:before,
+.hb-whatsapp:hover:after {
+  background: transparent;
+  border-color: #3aa659;
+  color: #3aa659;
+}
+
+/* Whatsapp inverts */
+.hb-whatsapp-inv,
+.hb-whatsapp-inv:after,
+.hb-whatsapp-inv:before {
+  color: #3aa659;
+  border-color: #3aa659;
+  background: transparent;
+}
+.hb-whatsapp-inv:hover,
+.hb-whatsapp-inv:hover:after,
+.hb-whatsapp-inv:hover:before {
+  background: #3aa659;
+  border-color: #3aa659;
+  color: #ffffff;
+}
+
+.hb-linkedin,
+.hb-linkedin:before,
+.hb-linkedin:after {
+  background: #3b5998;
+  border-color: #3b5998;
+  color: #ffffff;
+}
+.hb-linkedin:hover,
+.hb-linkedin:hover:before,
+.hb-linkedin:hover:after {
+  background: transparent;
+  border-color: #3b5998;
+  color: #3b5998;
+}
+
+/* linkedin inverts */
+.hb-linkedin-inv,
+.hb-linkedin-inv:after,
+.hb-linkedin-inv:before {
+  color: #3b5998;
+  border-color: #3b5998;
+  background: transparent;
+}
+.hb-linkedin-inv:hover,
+.hb-linkedin-inv:hover:after,
+.hb-linkedin-inv:hover:before {
+  background: #3b5998;
+  border-color: #3b5998;
+  color: #ffffff;
+}
+
+.hb-youtube,
+.hb-youtube:before,
+.hb-youtube:after {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #ff0000;
+}
+.hb-youtube:hover,
+.hb-youtube:hover:before,
+.hb-youtube:hover:after {
+  background: transparent;
+  border-color: #ffffff;
+  color: #ff0000;
+}
+
+/* youtube inverts */
+.hb-youtube-inv,
+.hb-youtube-inv:after,
+.hb-youtube-inv:before {
+  color: #ff0000;
+  border-color: #ffffff;
+  background: transparent;
+}
+.hb-youtube-inv:hover,
+.hb-youtube-inv:hover:after,
+.hb-youtube-inv:hover:before {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #ff0000;
 }
 
 .hb-twitter,

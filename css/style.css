@@ -312,10 +312,11 @@ button.btn-secondary:hover {
 
 .carousel-caption-modified {
   text-align: left !important;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Calibri";
   bottom: 7%;
   line-height: 1;
 }
+
 .know-more-cl {
   background: #ff0000;
   color: #ffffff;

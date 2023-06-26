@@ -315,6 +315,7 @@ button.btn-secondary:hover {
   font-family: "Calibri";
   bottom: 7%;
   line-height: 1;
+  left: 10% !important;
 }
 
 .know-more-cl {

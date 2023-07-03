@@ -10,7 +10,33 @@ body {
   font-size: 15px;
   color: #194376;
 }
-
+.chat-icon {
+  position: fixed;
+  right: 20px;
+  border: 0;
+  bottom: 10px;
+  font-size: 80px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+}
+.chat-box {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  width: 400px;
+  height: 75vh;
+  background: #dedede;
+  z-index: 1000;
+  transition: all 0.3s ease-out;
+  transform: scaleY(0);
+}
+.chat-box.active {
+  transform: scaleY(1);
+}
+.hidden {
+  display: none !important;
+}
 @media (min-width: 992px) {
   body {
     padding-top: 0px;
@@ -105,11 +131,11 @@ button.btn-secondary:hover {
 }
 
 .top-nav {
-  background-color: #ffffff !important;
+  background-color: #000000 !important; /* #ffffff !important; */
 }
 .navbar-expand-lg.top-nav .navbar-nav .nav-link {
   padding: 10px 15px;
-  color: #323232;
+  color: #ffffff; /* #323232; */
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
@@ -125,7 +151,7 @@ button.btn-secondary:hover {
   border-radius: 4.8px;
 }
 .navbar-expand-lg.top-nav .navbar-nav .nav-link.active {
-  color: #194376;
+  color: #ffffff; /* #194376; */
 }
 .navbar-expand-lg.top-nav .navbar-nav .nav-link.active:before {
   content: "";
@@ -283,6 +309,34 @@ button.btn-secondary:hover {
 .slider-main .carousel .carousel-item .carousel-caption p {
   font-size: 38px;
 }
+
+.carousel-caption-modified {
+  text-align: left !important;
+  font-family: "Calibri";
+  bottom: 7%;
+  line-height: 1;
+  left: 10% !important;
+}
+
+.know-more-cl {
+  background: #980311;
+  color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+.know-more-cl:hover {
+  background: #ffffff;
+  color: #000000;
+  text-decoration: none;
+}
+.carousel-caption-modified p {
+  font-size: 45px !important;
+  font-weight: 600 !important;
+}
+
 .slider-main .carousel .carousel-inner .carousel-item:before {
   content: "";
   position: absolute;
@@ -304,10 +358,21 @@ button.btn-secondary:hover {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+.clients-bar {
+  /* background: url(../images/dott.jpg); */
+  background-color: #d7d7d7;
+}
+
 .services-bar {
   padding: 20px 0px 30px 0px;
-  background: url(../images/dott.jpg);
+  /* background: url(../images/dott.jpg); */
+  background-color: #d7d7d7;
 }
+.services-bar-background {
+  background-color: #ffffff !important;
+}
+
 .services-bar h1 {
   font-weight: 600;
   font-size: 45px;
@@ -376,7 +441,8 @@ button.btn-secondary:hover {
   color: #194376;
 }
 .card-img img {
-  width: 100%;
+  width: 50vw;
+  height: 30vh;
 }
 .portfolio-main {
   padding: 30px 0px;
@@ -589,7 +655,7 @@ button.btn-secondary:hover {
   padding: 40px 0px;
   background: #194376;
   position: relative;
-  margin-top: 90px;
+  margin-top: 1px;
 }
 .touch-line:before {
   position: absolute;
@@ -836,7 +902,7 @@ footer p {
 }
 
 .hb-xs-margin {
-  margin: 5px;
+  margin: 3px;
   display: inline-block;
   overflow: hidden;
 }
@@ -907,6 +973,99 @@ footer p {
   background: #3b5998;
   border-color: #3b5998;
   color: #ffffff;
+}
+
+.hb-whatsapp,
+.hb-whatsapp:before,
+.hb-whatsapp:after {
+  background: #3aa659;
+  border-color: #3aa659;
+  color: #ffffff;
+}
+.hb-whatsapp:hover,
+.hb-whatsapp:hover:before,
+.hb-whatsapp:hover:after {
+  background: transparent;
+  border-color: #3aa659;
+  color: #3aa659;
+}
+
+/* Whatsapp inverts */
+.hb-whatsapp-inv,
+.hb-whatsapp-inv:after,
+.hb-whatsapp-inv:before {
+  color: #3aa659;
+  border-color: #3aa659;
+  background: transparent;
+}
+.hb-whatsapp-inv:hover,
+.hb-whatsapp-inv:hover:after,
+.hb-whatsapp-inv:hover:before {
+  background: #3aa659;
+  border-color: #3aa659;
+  color: #ffffff;
+}
+
+.hb-linkedin,
+.hb-linkedin:before,
+.hb-linkedin:after {
+  background: #3b5998;
+  border-color: #3b5998;
+  color: #ffffff;
+}
+.hb-linkedin:hover,
+.hb-linkedin:hover:before,
+.hb-linkedin:hover:after {
+  background: transparent;
+  border-color: #3b5998;
+  color: #3b5998;
+}
+
+/* linkedin inverts */
+.hb-linkedin-inv,
+.hb-linkedin-inv:after,
+.hb-linkedin-inv:before {
+  color: #3b5998;
+  border-color: #3b5998;
+  background: transparent;
+}
+.hb-linkedin-inv:hover,
+.hb-linkedin-inv:hover:after,
+.hb-linkedin-inv:hover:before {
+  background: #3b5998;
+  border-color: #3b5998;
+  color: #ffffff;
+}
+
+.hb-youtube,
+.hb-youtube:before,
+.hb-youtube:after {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #ff0000;
+}
+.hb-youtube:hover,
+.hb-youtube:hover:before,
+.hb-youtube:hover:after {
+  background: transparent;
+  border-color: #ffffff;
+  color: #ff0000;
+}
+
+/* youtube inverts */
+.hb-youtube-inv,
+.hb-youtube-inv:after,
+.hb-youtube-inv:before {
+  color: #ff0000;
+  border-color: #ffffff;
+  background: transparent;
+}
+.hb-youtube-inv:hover,
+.hb-youtube-inv:hover:after,
+.hb-youtube-inv:hover:before {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #ff0000;
 }
 
 .hb-twitter,
@@ -1681,6 +1840,16 @@ footer p {
   .navbar-expand-lg.top-nav .navbar-nav .nav-link::after {
     display: none;
   }
+}
+
+.service-three-columns {
+  display: flex;
+}
+
+/* columns */
+.service-three-columns > * {
+  width: calc(100% / 3);
+  padding: 1rem;
 }
 
 @media (min-width: 320px) and (max-width: 575.98px) {

@@ -319,7 +319,7 @@ button.btn-secondary:hover {
 }
 
 .know-more-cl {
-  background: #ff0000;
+  background: #980311;
   color: #ffffff;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
@@ -902,7 +902,7 @@ footer p {
 }
 
 .hb-xs-margin {
-  margin: 5px;
+  margin: 3px;
   display: inline-block;
   overflow: hidden;
 }

@@ -369,6 +369,10 @@ button.btn-secondary:hover {
   /* background: url(../images/dott.jpg); */
   background-color: #d7d7d7;
 }
+.services-bar-background {
+  background-color: #ffffff !important;
+}
+
 .services-bar h1 {
   font-weight: 600;
   font-size: 45px;
